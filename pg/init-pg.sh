@@ -1,0 +1,1 @@
+ docker  run -d --name sentry-postgres -p 5432:5432 -v $PWD/pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=sentry -e POSTGRES_USER=sentry postgres:9.5

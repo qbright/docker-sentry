@@ -82,7 +82,7 @@ RUN set -x \
     && python -c 'import maxminddb' \
     && apt-get purge -y --auto-remove make
 
-ARG SENTRY_BUILD=master
+ARG SENTRY_BUILD=9.1.1
 ENV SENTRY_BUILD $SENTRY_BUILD
 
 RUN [ "$SENTRY_BUILD" != '' ] \
